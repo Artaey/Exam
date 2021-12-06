@@ -1,0 +1,84 @@
+body
+{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    background: black;
+    color: bisque;
+    grid-gap: 2px;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+        "l h h h"
+        "n n n n"
+        "m m m m"
+        "f f f f"
+        "s s s s";
+    margin: auto;
+}
+
+body > *
+{
+    font-size: 20px;
+    padding: 5px;
+}
+
+body div
+{
+    padding: 0px;
+    grid-area: l;
+}
+
+body header
+{
+    grid-area: h;
+    max-width: 800px;
+}
+
+body header h1
+{
+    margin: 0px;
+    text-align: center;
+    font-size: 190%;
+}
+
+body nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: n;
+}
+
+body main
+{
+    grid-area: m;
+}
+
+body footer
+{
+    grid-area: f;
+    background: rgb(104, 66, 41);
+}
+
+body footer p
+{
+    margin: 5px;
+    margin-left: 20px;
+}
+
+a
+{
+    color: bisque;
+}
+a:hover
+{
+    color: rgb(124, 74, 40);
+}
+
+img
+{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
