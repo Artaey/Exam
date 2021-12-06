@@ -46,6 +46,7 @@ body nav
 {
     display: flex;
     justify-content: space-evenly;
+    
     grid-area: n;
 }
 
