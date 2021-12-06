@@ -45,7 +45,7 @@ body header h1
 body nav
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     grid-area: n;
 }
 
