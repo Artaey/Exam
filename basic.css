@@ -1,3 +1,8 @@
+html
+{
+    margin-bottom: 0px;
+}
+
 body
 {
     
@@ -6,15 +11,14 @@ body
     background: black;
     color: bisque;
     grid-gap: 2px;
-    grid-template-columns: 100px;
-    grid-template-rows: 100px;
+    grid-template-columns: 100px auto auto auto;
+    grid-template-rows: 100px auto auto auto;
     grid-template-areas: 
         "l h h h"
         "n n n n"
         "m m m m"
-        "f f f f"
-        "s s s s";
-    margin: auto;
+        "f f f f";
+    margin: 0px;
 }
 
 body > *
@@ -45,8 +49,7 @@ body header h1
 body nav
 {
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;    
     grid-area: n;
 }
 
