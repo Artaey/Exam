@@ -1,0 +1,85 @@
+html
+{
+    background-image: linear-gradient(to top, rgba(33,4,26,1) 0%, rgba(44,35,61,1) 60%);
+}
+
+body
+{
+    color: #BFCAE2;
+}
+
+body header
+{
+    background: #BFCAE2;
+    
+    color: #2C233D;
+}
+
+body main
+{
+    height: 90%;
+    display: grid;
+    grid-template-areas: 
+        "t";
+    
+    justify-content: center;
+}
+
+.buttonimg{
+    grid-area: t;
+
+    height: 100%;
+    width: 100%;
+    max-width: 1100px;
+    object-fit: cover;
+
+    cursor: pointer;
+}
+.buttonhover{
+    grid-area: t;
+
+    cursor: pointer;
+}
+
+.buttonhover:hover ~ .buttontext{
+    text-decoration: underline;
+}
+
+.hoverimg{
+    height: 100%;
+    width: 100%;
+    max-width: 1100px;
+    object-fit: cover;
+
+    opacity: 0%;
+}
+
+.hoverimg:hover{
+    opacity: 100%;
+}
+
+.buttontext{
+    grid-area: t;
+
+    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+body footer
+{
+    background: #21041A;
+}
+
+main a
+{
+    color: #BFCAE2;
+}
+
+header a
+{
+    color: #2C233D;
+}

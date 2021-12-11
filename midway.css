@@ -1,0 +1,88 @@
+main{
+
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-areas:
+        "a"
+        "b"
+        ".";
+    grid-template-columns: auto, auto, 100px;
+}
+
+.thing{
+    padding: 50px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.top{
+    height: 70px;
+}
+
+.bottom{
+    height: 70px;
+}
+
+.door1 {
+    grid-area: a;
+}
+
+.glow1{
+    grid-area: a;
+    opacity: 0%;
+}
+
+.glow1:hover{
+    opacity: 100%;
+}
+
+.glow1:hover ~ .text1{
+    text-decoration: underline;
+}
+
+.text1{
+    grid-area: a;
+
+    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.door2{
+    grid-area: b;
+}
+
+.glow2{
+    grid-area: b;
+    opacity: 0%;
+}
+
+.glow2:hover{
+    opacity: 100%;
+}
+
+.glow2:hover ~ .text2{
+    text-decoration: underline;
+}
+
+.text2{
+    grid-area: b;
+
+    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+@media screen and (min-width: 1200px) {
+    main{
+        grid-template-areas:
+        "a b";
+    }
+}
