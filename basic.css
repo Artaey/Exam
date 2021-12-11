@@ -1,42 +1,30 @@
 html
 {
-    margin-bottom: 0px;
+    background-image: linear-gradient(to top, rgba(33,4,26,1) 0%, rgba(44,35,61,1) 60%);
+    height: 100%;
 }
 
 body
 {
-    
     font-family: Georgia, 'Times New Roman', Times, serif;
-    display: grid;
-    background: black;
-    color: bisque;
-    grid-gap: 2px;
-    grid-template-columns: 100px auto auto auto;
-    grid-template-rows: 100px auto auto auto;
-    grid-template-areas: 
-        "l h h h"
-        "n n n n"
-        "m m m m"
-        "f f f f";
+    color: #BFCAE2;
+    height: 100%;
     margin: 0px;
 }
 
 body > *
 {
     font-size: 20px;
-    padding: 5px;
-}
-
-body div
-{
-    padding: 0px;
-    grid-area: l;
+    padding: 10px;
 }
 
 body header
 {
-    grid-area: h;
-    max-width: 800px;
+    background: #BFCAE2;
+    
+    color: #2C233D;
+    position: fixed;
+    width: 100%;
 }
 
 body header h1
@@ -44,24 +32,75 @@ body header h1
     margin: 0px;
     text-align: center;
     font-size: 190%;
+    max-width: 800px;
 }
 
 body nav
 {
     display: flex;
-    justify-content: space-evenly;    
-    grid-area: n;
+    justify-content: space-evenly;
 }
 
 body main
 {
-    grid-area: m;
+    display: grid;
+    height: 90%;
+    width: 100%;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    grid-template-areas: 
+        "t";
+    
+    justify-content: center;
+}
+
+.if{
+    grid-area: t;
+
+    height: 100%;
+    width: 100%;
+    max-width: 1100px;
+    object-fit: cover;
+
+    cursor: pointer;
+}
+.il{
+    grid-area: t;
+
+    height: 100%;
+    width: 100%;
+    max-width: 1100px;
+    object-fit: cover;
+
+    opacity: 0%;
+    
+    cursor: pointer;
+}
+
+.il:hover{
+    opacity: 100%;
+}
+
+.te{
+    grid-area: t;
+
+    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
 }
 
 body footer
 {
-    grid-area: f;
-    background: rgb(104, 66, 41);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #21041A;
 }
 
 body footer p
@@ -70,18 +109,22 @@ body footer p
     margin-left: 20px;
 }
 
-a
+a{
+    text-decoration: none;
+}
+
+main a
 {
-    color: bisque;
+    color: #BFCAE2;
+}
+
+header a
+{
+    color: #2C233D;
 }
 a:hover
 {
-    color: rgb(124, 74, 40);
+    text-decoration: underline;
 }
 
-img
-{
-    height: 100%;
-    width: 100%;
-}
 
