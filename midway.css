@@ -5,23 +5,13 @@ main{
     align-items: center;
     grid-template-areas:
         "a"
-        "b"
-        ".";
-    grid-template-columns: auto, auto, 100px;
+        "b";
 }
 
 .thing{
     padding: 50px;
     width: 80%;
     max-width: 500px;
-}
-
-.top{
-    height: 70px;
-}
-
-.bottom{
-    height: 70px;
 }
 
 .door1 {
@@ -80,7 +70,7 @@ main{
     pointer-events: none;
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1300px) {
     main{
         grid-template-areas:
         "a b";

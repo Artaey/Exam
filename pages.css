@@ -1,0 +1,50 @@
+.image{
+    padding: 10px;
+    padding-right: 0px;
+    width: 40%;
+    max-width: 400px;
+    float: right;
+}
+
+.thing{
+    width: 100%;
+}
+
+main p{
+    text-align: justify;
+    font-size: 85%;
+}
+
+main{
+    max-width: 1100px;
+    text-align: center;
+}
+
+.bottom{
+    height: 250px;
+}
+
+@media screen and (min-width: 750px) {
+
+.project{
+    display: grid;
+    grid-template-areas:
+        "h h"
+        "p i";
+}
+
+.project h2{
+    grid-area: h;
+    text-align: left;
+}
+
+.project p{
+    grid-area: p;
+}
+
+.project img{
+    margin-left: 15px;
+    grid-area: i;
+}
+
+}

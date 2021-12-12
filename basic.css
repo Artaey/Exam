@@ -35,19 +35,20 @@ body header h1
     max-width: 800px;
 }
 
-body nav
-{
-    display: flex;
-    justify-content: space-evenly;
-}
-
 body main
 {
-    width: 100%;
+    width: 95%;
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
 }
+
+hr{
+    margin-top: 10px;
+    border-color: #FFEBC8;
+}
+
+/* stuff for the footer */
 
 body footer
 {
@@ -57,18 +58,21 @@ body footer
     background: #C5733C;
 }
 
-body footer p
+body div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body footer div p
 {
-    margin: 5px;
+    margin: 0px;
     margin-left: 20px;
 }
 
+/* links */
+
 a{
     text-decoration: none;
-}
-
-a
-{
     color: #FFEBC8;
 }
 
@@ -77,6 +81,8 @@ a:hover
     text-decoration: underline;
 }
 
+/* the back button candle */
+
 .candle{
     position: fixed;
     left: 0px;
@@ -84,8 +90,12 @@ a:hover
     margin-left: auto;
     margin-right: auto;
     width: 120px;
-    bottom: 0px;
+    bottom: 10px;
     pointer-events: none;
+}
+
+.lit{
+    width: 400px;
 }
 
 .back{
@@ -100,3 +110,18 @@ a:hover
 .back a{
     color: #21041A;
 }
+
+/* the top and bottom margin ajustments */
+
+.top{
+    height: 70px;
+}
+
+.bottom{
+    height: 70px;
+}
+
+
+
+
+
