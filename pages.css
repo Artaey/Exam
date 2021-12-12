@@ -6,6 +6,15 @@
     float: right;
 }
 
+.project{
+    display: flex;
+    flex-direction: column;
+}
+
+.project h2{
+    text-align: left;
+}
+
 .thing{
     width: 100%;
 }
@@ -35,7 +44,6 @@ main{
 
 .project h2{
     grid-area: h;
-    text-align: left;
 }
 
 .project p{
