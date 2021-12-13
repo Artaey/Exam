@@ -70,9 +70,17 @@ main{
     pointer-events: none;
 }
 
+.bottom{
+    height: 200px;
+}
+
 @media screen and (min-width: 1300px) {
     main{
         grid-template-areas:
         "a b";
+    }
+
+    .bottom{
+        height: 70px;
     }
 }
