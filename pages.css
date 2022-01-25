@@ -6,6 +6,10 @@
     float: right;
 }
 
+video{
+    margin: 15px;
+}
+
 .project{
     display: flex;
     flex-direction: column;
