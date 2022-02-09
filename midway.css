@@ -71,7 +71,7 @@ main{
 }
 
 .bottom{
-    height: 200px;
+    height: 100px;
 }
 
 @media screen and (min-width: 1300px) {

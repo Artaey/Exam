@@ -1,9 +1,16 @@
+
+html{
+    width: 97%;
+}
+
 .image{
     padding: 10px;
     padding-right: 0px;
     width: 40%;
     max-width: 400px;
     float: right;
+    padding-left: 20px;
+
 }
 
 video{
@@ -39,6 +46,10 @@ main{
 
 @media screen and (min-width: 750px) {
 
+.image{
+    padding-left: 40px;
+}
+
 .project{
     display: grid;
     grid-template-areas:
@@ -55,7 +66,7 @@ main{
 }
 
 .project img{
-    margin-left: 15px;
+    margin-left: 40px;
     grid-area: i;
 }
 
